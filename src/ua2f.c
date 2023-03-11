@@ -394,7 +394,7 @@ int main(int argc, char *argv[]) {
     }
 
     UAstr = malloc(sizeof_buf);
-    memset(UAstr, 'F', sizeof_buf);
+    memset(UAstr, 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69', sizeof_buf);
 
     nlh = nfq_nlmsg_put(buf, NFQNL_MSG_CONFIG, queue_number);
     nfq_nlmsg_cfg_put_cmd(nlh, AF_INET, NFQNL_CFG_CMD_BIND);
